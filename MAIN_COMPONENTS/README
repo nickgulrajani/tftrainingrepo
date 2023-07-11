@@ -1,0 +1,58 @@
+The provided code creates a basic network infrastructure in 
+Microsoft Azure using Terraform. 
+
+
+Here's what each section of the code does:
+
+Provider Configuration:
+
+Sets up the Azure provider using the azurerm plugin.
+Specifies the Azure subscription ID from the var.subscription_id input variable.
+
+Input Variables:
+
+Declares input variables to accept values for Azure subscription ID, resource group name, resource group location, virtual network name, virtual network CIDR block, and network security group name.
+Provides default values for some of the variables.
+
+Resource Group:
+
+Creates an Azure resource group using the azurerm_resource_group resource.
+Uses the provided var.resource_group_name and var.resource_group_location for the resource group name and location, respectively.
+
+Virtual Network:
+
+Creates an Azure virtual network using the azurerm_virtual_network resource.
+Uses the provided var.virtual_network_name, azurerm_resource_group.example.name, and azurerm_resource_group.example.location for the virtual network name, resource group name, and location, respectively.
+Specifies the address space for the virtual network using the
+var.virtual_network_cidr_block.
+
+Subnet:
+
+Creates an Azure subnet using the azurerm_subnet resource.
+Sets the subnet name as "FollSubNet" and associates it with the virtual network and resource group using the corresponding attributes.
+Specifies the address prefix for the subnet using ["10.0.1.0/24"].
+
+Data Source:
+
+Retrieves information about the created subnet using the azurerm_subnet.example resource.
+Specifies the subnet name, virtual network name, and resource group name 
+in the data "azurerm_subnet" "example" block.
+
+Network Security Group:
+
+Creates an Azure network security group using the azurerm_network_security_group resource.
+Uses the provided var.network_security_group_name, azurerm_resource_group.example.location, and azurerm_resource_group.example.name for the network security group name, location, and resource group name, respectively.
+Defines a security rule named "SSH" to allow inbound TCP traffic on port 22.
+
+Subnet-Network Security Group Association:
+
+Associates the created subnet with the network security group using the azurerm_subnet_network_security_group_association resource.
+Specifies the subnet ID and network security group ID using 
+azurerm_subnet.example.id and azurerm_network_security_group.example.id, 
+respectively.
+
+This code creates a resource group, virtual network, subnet, network security group, and associates the subnet with the network security group in Azure. 
+
+It also fetches information about the subnet using a data source.
+
+
