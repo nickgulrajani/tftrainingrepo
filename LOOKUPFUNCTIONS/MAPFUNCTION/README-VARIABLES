@@ -1,0 +1,25 @@
+The variables.tf file in Terraform is used to define input variables that can be used throughout your Terraform configuration. 
+
+
+Here's what the code snippet does:
+
+The variable block defines a variable named "environment" of type string.
+
+It represents the environment for the resources you're provisioning. 
+
+
+The description attribute provides a description or explanation of the variable, and the default attribute sets a default value of "dev" for the variable if no value is explicitly provided.
+
+The variable block also defines a variable named "dns_servers" of type map(string).
+
+ It represents a mapping of environment names to DNS server IP addresses. 
+
+The default attribute provides a default mapping where "default" maps to "8.8.8.8", "dev" maps to "10.0.0.1", and "prod" maps to "10.1.0.1".
+
+These variables allow you to customize and parameterize your Terraform configuration based on the specific environment you're working with. 
+
+The "environment" variable allows you to specify the environment name, while the "dns_servers" variable allows you to provide environment-specific DNS server IP addresses.
+
+By defining variables in variables.tf, you can easily manage and update configuration values without modifying the underlying code. 
+
+It provides flexibility and reusability by allowing you to input different values for these variables depending on your specific use case or environment.
