@@ -19,11 +19,16 @@ It retrieves the value of module.example_module.config_value and makes it availa
 an output value.
 
 The purpose of this code is to showcase how the lookup function can be used to retrieve values
-from a map variable with a fallback mechanism. In this example,
-the lookup function is used to fetch the value associated with the key "key4" from the var.config map. If the key is present, the associated value is used. If the key is not found, the fallback value "default-value" is used instead.
+from a map variable with a fallback mechanism. 
+
+In this example, the lookup function is used to fetch the value associated with the key "key4" 
+from the var.config map. If the key is present, the associated value is used. 
+
+If the key is not found, the fallback value "default-value" is used instead.
 
 The value of this approach is that it provides a way to handle situations where certain 
 
-configuration values may be missing or not provided, ensuring that the code does not fail and 
-has a default value to fall back on. It adds flexibility and resilience to the configuration 
-by allowing defaults or fallback values to be used when specific values are not available.
+configuration values may be missing or not provided, ensuring that the code 
+does not fail and has a default value to fall back on. It adds flexibility and resilience
+ to the configuration by allowing defaults or fallback values to be used when specific
+  values are not available.

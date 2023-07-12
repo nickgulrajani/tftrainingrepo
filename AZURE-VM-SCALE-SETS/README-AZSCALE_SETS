@@ -1,0 +1,12 @@
+The main.tf file you provided defines a Terraform configuration that creates a virtual machine scale set (VMSS) and a jumpbox in Azure. The VMSS will have two instances, each running Ubuntu Server 16.04 LTS. The jumpbox will also run Ubuntu Server 16.04 LTS. The VMSS will be exposed to the internet via a load balancer.
+
+The following are the main steps that the main.tf file performs:
+
+Creates a resource group in Azure.
+Creates a virtual network and subnet in the resource group.
+Creates a public IP address for the VMSS.
+Creates a load balancer and a backend address pool for the VMSS.
+Creates a rule in the load balancer that allows traffic to the VMSS.
+Creates a VMSS with two instances.
+Creates a jumpbox with one instance.
+Attaches the public IP address to the jumpbox.
