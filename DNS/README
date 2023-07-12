@@ -1,0 +1,56 @@
+Terraform Configuration:
+
+Specifies the required version of Terraform (0.12 or later).
+Declares the required provider, "azurerm," with a version constraint of "~> 2.0".
+
+Provider Configuration:
+
+Configures the Azure provider with azurerm.
+features {} block enables all available provider features.
+Resource Group:
+
+Creates an Azure resource group named "nic-resource-group" in the "West US" region.
+Virtual Network:
+
+Creates an Azure virtual network named "my-vnet" within the resource group.
+Defines the address space for the virtual network as "10.0.0.0/16".
+
+Sets the location to "West US".
+
+Specifies DNS server addresses as "8.8.8.8" and "8.8.4.4".
+
+
+Subnet:
+
+Creates a subnet named "my-subnet" within the virtual network.
+Associates it with the previously created resource group and virtual network.
+Sets the subnet's address prefix as "10.0.0.0/24".
+
+Network Interface:
+
+Creates a network interface named "my-nic" within the resource group.
+Associates it with the previously created resource group and subnet.
+Configures the IP configuration with dynamic IP address allocation.
+
+Virtual Machine:
+
+Creates an Azure virtual machine named "my-vm" within the resource group.
+Associates it with the previously created resource group and network interface.
+
+Sets the location to "West US".
+
+Defines the VM size as "Standard_DS1_v2".
+
+Specifies the image reference as "Canonical:UbuntuServer:16.04-LTS".
+
+Configures the OS disk with the specified caching, create option, and managed disk type.
+
+Sets the computer name, admin username, and admin password for the VM.
+
+Enables password authentication for Linux-based VMs.
+
+This code provisions a virtual machine in Azure along with its associated networking resources, including a resource group, virtual network, subnet, network interface, and the necessary configurations. 
+
+The VM is based on an Ubuntu Server image and is created in the "West US" region.
+
+
