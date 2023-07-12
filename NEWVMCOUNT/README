@@ -1,0 +1,25 @@
+If you change the vm_count variable in the variables.tf file from '2' to '3',
+and then run terraform apply, 
+
+Terraform will perform the necessary actions to reconcile the desired state with the current state.
+
+In this case, Terraform will:
+
+Detect the change in the value of vm_count from '2' to '3'.
+
+
+Analyze the current state and compare it with the desired state.
+Determine that the desired state includes an additional VM instance.
+Plan and execute the necessary steps to create the third VM instance.
+
+
+Terraform will not automatically destroy the existing two VM instances. 
+
+It will only create the new VM instance to match the desired count of '3'. Terraform is designed to be declarative, meaning it aims to achieve the desired state without affecting existing resources that are not specified for modification.
+
+If you want to remove the existing two VM instances and create three new ones, you can manually run terraform destroy before updating the vm_count variable to '3'. 
+
+
+This will remove all the resources managed by Terraform and allow the subsequent terraform apply to create three new VM instances.
+
+ However, note that terraform destroy will delete all the resources managed by Terraform, so exercise caution before running it in a production environment.
