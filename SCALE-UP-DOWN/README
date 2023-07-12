@@ -1,0 +1,47 @@
+The provided Terraform code provisions an autoscale setting for an Azure App Service Plan. Let's break it down:
+
+Provider Configuration:
+
+Specifies the Azure provider with azurerm.
+features {} block enables all available provider features.
+
+Resource Group:
+
+Creates an Azure resource group named "autoscale-example-resources" in the "West Europe" region.
+
+App Service Plan:
+
+Creates an Azure App Service Plan named "example-app-service-plan" in the same resource group and region as the resource group.
+
+Defines the SKU (service tier and size) for the App Service Plan as "Standard" and "S1" respectively.
+
+Autoscale Setting:
+
+Creates an Azure Monitor Autoscale Setting named "example-autoscale-setting" in the same resource group and region as the resource group.
+
+Associates the Autoscale Setting with the previously created App Service Plan using the target_resource_id attribute.
+
+Defines a profile for autoscaling based on CPU usage.
+
+Configures capacity settings with a default of 1 instance, a minimum of 1 instance, and a maximum of 3 instances.
+
+Sets up two autoscale rules based on CPU usage metrics:
+
+The first rule triggers an increase in the instance count if the CPU percentage exceeds 75% over a 5-minute period. 
+
+It increases the instance count by 1 and has a cooldown of 1 minute.
+
+The second rule triggers a decrease in the instance count if the CPU percentage falls below 25% over a 5-minute period. 
+
+It decreases the instance count by 1 and has a cooldown of 1 minute.
+
+This configuration sets up autoscaling for the App Service Plan based on CPU usage metrics. 
+
+It ensures that the number of instances automatically scales up or down to meet the defined thresholds, helping to optimize resource utilization and handle varying workload demands.
+
+
+
+
+
+
+
