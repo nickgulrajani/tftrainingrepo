@@ -1,4 +1,10 @@
-The main.tf file you provided defines a Terraform configuration that creates a virtual machine scale set (VMSS) and a jumpbox in Azure. The VMSS will have two instances, each running Ubuntu Server 16.04 LTS. The jumpbox will also run Ubuntu Server 16.04 LTS. The VMSS will be exposed to the internet via a load balancer.
+The main.tf file you provided defines a Terraform configuration that 
+creates a virtual machine scale set (VMSS) and a jumpbox in Azure. 
+
+
+The VMSS will have two instances, each running Ubuntu Server 16.04 LTS. 
+
+The jumpbox will also run Ubuntu Server 16.04 LTS. The VMSS will be exposed to the internet via a load balancer.
 
 The following are the main steps that the main.tf file performs:
 
