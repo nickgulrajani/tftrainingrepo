@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 variable "resource_group_name" {
   description = "Name of the resource group"
   default     = "my-resource-group"

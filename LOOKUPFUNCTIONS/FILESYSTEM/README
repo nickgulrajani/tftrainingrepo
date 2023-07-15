@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 The terraform block specifies the required provider, which in this case is the local provider from HashiCorp. 
 
 It specifies the version of the provider to use.

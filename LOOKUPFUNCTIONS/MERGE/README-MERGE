@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 The merge function in Terraform is used to merge multiple maps together, combining their key-value pairs into a single map. Here's what the code snippet does and why the merge function is important:
 
 The code defines two variables, default_config and override_config, which are maps of type map(string). These maps represent different configurations with key-value pairs.

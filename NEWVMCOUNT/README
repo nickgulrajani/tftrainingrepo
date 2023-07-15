@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 If you change the vm_count variable in the variables.tf file from '2' to '3',
 and then run terraform apply, 
 

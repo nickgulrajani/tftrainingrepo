@@ -1,2 +1,3 @@
-admin_password = "ChangeMe0711!"
+#AUTHOR: Nicholas Gulrajani
+admin_password = "ChangeMe007!"
 

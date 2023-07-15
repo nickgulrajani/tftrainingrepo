@@ -1,3 +1,5 @@
+#AUTHOR: Nicholas Gulrajani
+
 variable "resource_group_name" {
    description = "Name of the resource group in which the resources will be created"
    default     = "nichogtrmyResourceGroup"

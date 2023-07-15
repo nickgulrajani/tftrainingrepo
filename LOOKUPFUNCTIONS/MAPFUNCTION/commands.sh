@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 # make sure terraform CLI is installed
 terraform
 

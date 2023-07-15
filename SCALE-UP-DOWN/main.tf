@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 provider "azurerm" {
   features {}
 }

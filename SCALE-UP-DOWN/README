@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 The provided Terraform code provisions an autoscale setting for an Azure App Service Plan. Let's break it down:
 
 Provider Configuration:

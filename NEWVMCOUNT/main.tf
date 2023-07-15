@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 # Provider configuration for Azure
 provider "azurerm" {
   features {}

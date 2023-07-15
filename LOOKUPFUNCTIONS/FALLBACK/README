@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 The variable block defines a variable named "config" of type map(string). 
 
 It has a default value that is a map of key-value pairs.

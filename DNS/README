@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 Terraform Configuration:
 
 Specifies the required version of Terraform (0.12 or later).

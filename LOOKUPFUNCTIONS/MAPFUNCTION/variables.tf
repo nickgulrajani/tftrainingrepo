@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 variable "environment" {
   type        = string
   description = "Environment for the resources."

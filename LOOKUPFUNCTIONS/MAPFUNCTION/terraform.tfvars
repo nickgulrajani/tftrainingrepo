@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 resource_group_name = "nicho-resource-group"
 location            = "West US"
 vm_name             = "my-vm"

@@ -1,3 +1,4 @@
+#AUTHOR: Nicholas Gulrajani
 resource "azurerm_resource_group" "nic_example" {
   name     = "nic_example-resource-group"
   location = "eastus"
