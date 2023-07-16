@@ -1,0 +1,44 @@
+
+
+run terraform init at the root folder 
+
+
+terraform workspace show
+
+
+terraform workspace select dev
+
+
+Open a command prompt or terminal.
+
+Navigate to the qa folder of your Terraform project.
+
+Initialize Terraform by running the following command:
+
+terraform init
+
+
+terraform workspace new qa
+
+
+terraform workspace select qa
+
+
+terraform apply -var-file=qa.tfvars
+
+
+Open a command prompt or terminal and navigate to the dev folder of your Terraform project.
+
+Initialize Terraform by running the following command:
+
+terraform init
+
+terraform workspace new dev
+
+
+terraform workspace select dev
+
+
+terraform apply -var-file=dev.tfvars
+
+
